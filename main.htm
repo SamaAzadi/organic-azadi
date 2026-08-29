@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style/fonts.css" rel="stylesheet"></link>
+    <style> 
+        img{
+            width: 50px;
+        }
+
+        body {
+            margin: 0;
+            direction: rtl;
+            background: rgb(241, 240, 233);
+            font-family: sans;
+        }
+
+        .menu {
+            background: rgb(26, 59, 45);
+            width: 500px;
+            height: 600px;
+            margin: 50px auto;
+
+            display: flex;
+            flex-flow: column;
+            gap: 30px;
+            align-items: center;
+            /* justify-content: center; */
+            border-radius: 9px;
+        }
+
+        .menu>.logo {
+            width: 180px;
+            background: transparent;
+            margin-top: 50px;
+        }
+
+        .menu>ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 90%;
+        }
+
+        .menu>ul>li {
+            width: 100%;
+            text-indent: 50px;
+            margin-top: 15px;
+            padding: 15px 0;
+            border-radius: 9px;
+            cursor: pointer;
+            color: rgb(26, 59, 45);
+        }
+
+        .menu>ul>.insta{
+            background:rgb(238, 235, 209) url("img/insta (1).png") no-repeat 97% 47%;
+            background-size: 30px;
+        }
+
+        .menu>ul>.eitaa{
+            background:rgb(238, 235, 209) url("img/eitaa-svgrepo-com.svg") no-repeat 97% 47%;
+            background-size: 32px;
+        }
+
+        .menu>ul>.location{
+            background:rgb(238, 235, 209) url("img/location2 (1).png") no-repeat 97% 47%;
+            background-size: 30px;
+        }
+
+        .menu>ul>.phone{
+            background:rgb(238, 235, 209) url("img/flash2 (1).png") no-repeat 96% 53%;
+            background-size: 17px;
+
+            position: relative;
+        }
+
+        .menu>ul>li>a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: rgb(26, 59, 45);
+            text-decoration:none;
+        }
+
+        .menu>ul>li>ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            
+            
+            position: absolute;
+            top: 55px;
+
+            display: none;
+        }
+
+        .menu>ul>li>ul>li{
+            width: 100%;
+            direction: ltr;
+            text-align: center;
+            
+            margin-top: 8px;
+            padding: 9px 0 6px 0;
+            border-radius: 9px;
+            cursor: pointer;
+            color: rgb(26, 59, 45);
+            background:rgb(122, 156, 142) url("img/phone2 (2).png") no-repeat 40% 45%;
+            background-size: 17px;
+        }
+
+        .menu>ul>li>ul>li>a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: rgb(26, 59, 45);
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<title>Organic Azadi</title>
+<link rel="icon" type="img/png" href="img/photo29464987848-removebg-preview.png">
+
+<body>
+    <div class="menu" id="menu1">
+        <img class="logo" src="img/organic-azadi-green-bg__1_-removebg-preview.png" alt="">
+        <ul>
+            <li class="insta"> <a href="https://www.instagram.com/organicazadi?igsi=MXd4cml5ZGU0cDdjcA==">پیج اینستا</a></li>
+            <li class="eitaa"><a href="https://eitaa.com/Organicazadi">کانال ایتا</a></li>
+            <li class="location"><a href="https://goo.gl/maps/kpVEiMXHgkqL47Qd9">آدرس فروشگاه</a></li>
+            <li class="phone" onclick="show()">شماره تماس 
+                <ul id="subMenu" onclick="event.stopPropagation()">
+                    <li>
+                        <a href="tel:09114389793">0911 438 9793</a>
+                    </li>
+                    <li>
+                        <a href="tel:09114389793">0911 438 9793</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+<script>
+    pose = 1;
+
+    function show(){
+        if(pose == 1){
+            subMenu.style.display = "block";
+            menu1.style.height = "670px";
+            pose = 0;
+        }else{
+            subMenu.style.display = "none";
+            menu1.style.height = "600px";
+            pose = 1;
+        }
+        
+    }
+</script>
+</html>
