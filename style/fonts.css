@@ -1,0 +1,17 @@
+@font-face{
+	src:url("../fonts/IRANSansX-Regular.woff2");
+	font-family:sans;	
+}
+@font-face{
+	src:url("../fonts/IRANSansX-Bold.woff");
+	font-family:sansB;	
+}
+
+@font-face{
+    src: tahoma;
+    font-family:mj;
+}
+@font-face{
+    src:url("../fonts/Yekan.ttf");
+    font-family:yek;
+}
